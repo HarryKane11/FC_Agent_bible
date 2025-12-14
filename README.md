@@ -44,10 +44,9 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-**2) 가상환경 생성 및 패키지 설치 (한 번에!):**
+**2) 가상환경 생성 + 패키지 설치 (한 줄로 끝!):**
 ```bash
-uv venv
-uv pip install -r requirements.txt
+uv sync
 ```
 
 **3) 가상환경 활성화:**

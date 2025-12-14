@@ -1,0 +1,46 @@
+[project]
+name = "fc-agent-bible"
+version = "1.0.0"
+description = "패스트캠퍼스 Agent 초격차 강의 실습 환경"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    # LangChain 핵심 패키지
+    "langchain>=0.3.0",
+    "langchain-openai>=0.2.0",
+    "langchain-community>=0.3.0",
+    "langchain-text-splitters>=0.3.0",
+    
+    # LangGraph
+    "langgraph>=0.2.0",
+    
+    # MCP (Model Context Protocol)
+    "langchain-mcp-adapters>=0.0.1",
+    "mcp>=0.1.0",
+    
+    # 벡터 저장소
+    "chromadb>=0.5.0",
+    
+    # PDF 처리
+    "pypdf>=4.0.0",
+    
+    # 토크나이저
+    "tiktoken>=0.7.0",
+    
+    # 웹 스크래핑
+    "beautifulsoup4>=4.12.0",
+    
+    # 환경 변수
+    "python-dotenv>=1.0.0",
+    
+    # LangSmith (추적 및 모니터링)
+    "langsmith>=0.1.0",
+    
+    # Jupyter
+    "jupyter>=1.0.0",
+    "ipykernel>=6.0.0",
+]
+
+[tool.uv]
+dev-dependencies = []
+
